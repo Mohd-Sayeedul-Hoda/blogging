@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: blog_deployment
+  name: blog-deployment
 spec:
   replicas: 2
   selector: # tells the controller which pods to watch/belong to
@@ -13,7 +13,7 @@ spec:
         app: blog
     spec:
       containers:
-        - name: blog_app
+        - name: blog-app
           image: sayeedulhoda/pipeline-demo
           imagePullPolicy: Always
           ports:

@@ -1,9 +1,9 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: blog_service
+  name: blog-service
   labels:
-    app: blog_service
+    app: blog-service
 spec:
   ports:
     - port: 8080
